@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D97EFFB2C19D84F0041ADA0 /* VoicemodAfterRecordingAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFA2C19D84F0041ADA0 /* VoicemodAfterRecordingAudioEngine.swift */; };
+		6D97EFFD2C19DF850041ADA0 /* VoicemodAfterRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFC2C19DF850041ADA0 /* VoicemodAfterRecordingViewController.swift */; };
+		6D97EFFF2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */; };
+		6DBC22F42C19AF840021835F /* Female-Vocal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC22F12C19AF840021835F /* Female-Vocal.wav */; };
+		6DBC22F52C19AF840021835F /* stereo-voice.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC22F22C19AF840021835F /* stereo-voice.wav */; };
+		6DBC22F72C19B4C60021835F /* SwitchboardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */; };
+		6DF381062C18B82B004C1DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381052C18B82B004C1DF9 /* AppDelegate.swift */; };
+		6DF381082C18B82B004C1DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */; };
+		6DF3810A2C18B82B004C1DF9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381092C18B82B004C1DF9 /* MainViewController.swift */; };
+		6DF3810D2C18B82B004C1DF9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3810C2C18B82B004C1DF9 /* Base */; };
+		6DF3810F2C18B82B004C1DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3810E2C18B82B004C1DF9 /* Assets.xcassets */; };
+		6DF381122C18B82B004C1DF9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DF381112C18B82B004C1DF9 /* Base */; };
+		6DF3811B2C18C492004C1DF9 /* SwitchboardSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF3811A2C18C492004C1DF9 /* SwitchboardSDK */; };
+		6DF3811D2C18C492004C1DF9 /* SwitchboardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF3811C2C18C492004C1DF9 /* SwitchboardUI */; };
+		6DF3811F2C18C492004C1DF9 /* SwitchboardVoicemod in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF3811E2C18C492004C1DF9 /* SwitchboardVoicemod */; };
+		6DF381212C18CA4E004C1DF9 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381202C18CA4E004C1DF9 /* Example.swift */; };
+		6DF381232C18CA5A004C1DF9 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381222C18CA5A004C1DF9 /* ExampleGroup.swift */; };
+		6DF381252C18CB6C004C1DF9 /* ExampleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381242C18CB6C004C1DF9 /* ExampleProvider.swift */; };
+		6DF381292C18CBCF004C1DF9 /* PlayerWithVoicemodExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381262C18CBCF004C1DF9 /* PlayerWithVoicemodExample.swift */; };
+		6DF3812A2C18CBCF004C1DF9 /* PlayerWithVoicemodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381272C18CBCF004C1DF9 /* PlayerWithVoicemodViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D97EFFA2C19D84F0041ADA0 /* VoicemodAfterRecordingAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodAfterRecordingAudioEngine.swift; sourceTree = "<group>"; };
+		6D97EFFC2C19DF850041ADA0 /* VoicemodAfterRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodAfterRecordingViewController.swift; sourceTree = "<group>"; };
+		6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceChangersList.swift; sourceTree = "<group>"; };
+		6DBC22F12C19AF840021835F /* Female-Vocal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Female-Vocal.wav"; sourceTree = "<group>"; };
+		6DBC22F22C19AF840021835F /* stereo-voice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "stereo-voice.wav"; sourceTree = "<group>"; };
+		6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchboardConfig.swift; path = VoicemodLocalPlayback/Utils/SwitchboardConfig.swift; sourceTree = SOURCE_ROOT; };
+		6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoicemodLocalPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF381052C18B82B004C1DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DF381092C18B82B004C1DF9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6DF3810C2C18B82B004C1DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DF3810E2C18B82B004C1DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DF381112C18B82B004C1DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DF381132C18B82B004C1DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF381202C18CA4E004C1DF9 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		6DF381222C18CA5A004C1DF9 /* ExampleGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleGroup.swift; sourceTree = "<group>"; };
+		6DF381242C18CB6C004C1DF9 /* ExampleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleProvider.swift; sourceTree = "<group>"; };
+		6DF381262C18CBCF004C1DF9 /* PlayerWithVoicemodExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWithVoicemodExample.swift; sourceTree = "<group>"; };
+		6DF381272C18CBCF004C1DF9 /* PlayerWithVoicemodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWithVoicemodViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF380FF2C18B82B004C1DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF3811B2C18C492004C1DF9 /* SwitchboardSDK in Frameworks */,
+				6DF3811F2C18C492004C1DF9 /* SwitchboardVoicemod in Frameworks */,
+				6DF3811D2C18C492004C1DF9 /* SwitchboardUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D97EFF92C19D7850041ADA0 /* VoicemodAfterRecording */ = {
+			isa = PBXGroup;
+			children = (
+				6D97EFFA2C19D84F0041ADA0 /* VoicemodAfterRecordingAudioEngine.swift */,
+				6D97EFFC2C19DF850041ADA0 /* VoicemodAfterRecordingViewController.swift */,
+			);
+			path = VoicemodAfterRecording;
+			sourceTree = "<group>";
+		};
+		6D97F0002C1B02120041ADA0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6DF381052C18B82B004C1DF9 /* AppDelegate.swift */,
+				6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */,
+				6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */,
+				6DF381092C18B82B004C1DF9 /* MainViewController.swift */,
+				6DF381242C18CB6C004C1DF9 /* ExampleProvider.swift */,
+				6DF381222C18CA5A004C1DF9 /* ExampleGroup.swift */,
+				6DF381202C18CA4E004C1DF9 /* Example.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6DBC22F32C19AF840021835F /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC22F12C19AF840021835F /* Female-Vocal.wav */,
+				6DBC22F22C19AF840021835F /* stereo-voice.wav */,
+			);
+			name = AudioFiles;
+			path = PlayerWithVoicemod/AudioFiles;
+			sourceTree = "<group>";
+		};
+		6DF380F92C18B82B004C1DF9 = {
+			isa = PBXGroup;
+			children = (
+				6DF381042C18B82B004C1DF9 /* VoicemodLocalPlayback */,
+				6DF381032C18B82B004C1DF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF381032C18B82B004C1DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF381042C18B82B004C1DF9 /* VoicemodLocalPlayback */ = {
+			isa = PBXGroup;
+			children = (
+				6D97F0002C1B02120041ADA0 /* Utils */,
+				6D97EFF92C19D7850041ADA0 /* VoicemodAfterRecording */,
+				6DBC22F32C19AF840021835F /* AudioFiles */,
+				6DF381282C18CBCF004C1DF9 /* PlayerWithVoicemod */,
+				6DF3810B2C18B82B004C1DF9 /* Main.storyboard */,
+				6DF3810E2C18B82B004C1DF9 /* Assets.xcassets */,
+				6DF381102C18B82B004C1DF9 /* LaunchScreen.storyboard */,
+				6DF381132C18B82B004C1DF9 /* Info.plist */,
+				6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */,
+			);
+			path = VoicemodLocalPlayback;
+			sourceTree = "<group>";
+		};
+		6DF381282C18CBCF004C1DF9 /* PlayerWithVoicemod */ = {
+			isa = PBXGroup;
+			children = (
+				6DF381262C18CBCF004C1DF9 /* PlayerWithVoicemodExample.swift */,
+				6DF381272C18CBCF004C1DF9 /* PlayerWithVoicemodViewController.swift */,
+			);
+			path = PlayerWithVoicemod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DF381012C18B82B004C1DF9 /* VoicemodLocalPlayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodLocalPlayback" */;
+			buildPhases = (
+				6DF380FE2C18B82B004C1DF9 /* Sources */,
+				6DF380FF2C18B82B004C1DF9 /* Frameworks */,
+				6DF381002C18B82B004C1DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoicemodLocalPlayback;
+			packageProductDependencies = (
+				6DF3811A2C18C492004C1DF9 /* SwitchboardSDK */,
+				6DF3811C2C18C492004C1DF9 /* SwitchboardUI */,
+				6DF3811E2C18C492004C1DF9 /* SwitchboardVoicemod */,
+			);
+			productName = VoicemodLocalPlayback;
+			productReference = 6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF380FA2C18B82B004C1DF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6DF381012C18B82B004C1DF9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "Voicemod Local Playback" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DF380F92C18B82B004C1DF9;
+			packageReferences = (
+				6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */,
+			);
+			productRefGroup = 6DF381032C18B82B004C1DF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF381012C18B82B004C1DF9 /* VoicemodLocalPlayback */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF381002C18B82B004C1DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC22F42C19AF840021835F /* Female-Vocal.wav in Resources */,
+				6DBC22F52C19AF840021835F /* stereo-voice.wav in Resources */,
+				6DF3810F2C18B82B004C1DF9 /* Assets.xcassets in Resources */,
+				6DF381122C18B82B004C1DF9 /* Base in Resources */,
+				6DF3810D2C18B82B004C1DF9 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF380FE2C18B82B004C1DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF381232C18CA5A004C1DF9 /* ExampleGroup.swift in Sources */,
+				6DF381212C18CA4E004C1DF9 /* Example.swift in Sources */,
+				6DF3810A2C18B82B004C1DF9 /* MainViewController.swift in Sources */,
+				6D97EFFD2C19DF850041ADA0 /* VoicemodAfterRecordingViewController.swift in Sources */,
+				6DF381062C18B82B004C1DF9 /* AppDelegate.swift in Sources */,
+				6D97EFFF2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift in Sources */,
+				6DF381082C18B82B004C1DF9 /* SceneDelegate.swift in Sources */,
+				6DF381252C18CB6C004C1DF9 /* ExampleProvider.swift in Sources */,
+				6DF381292C18CBCF004C1DF9 /* PlayerWithVoicemodExample.swift in Sources */,
+				6DBC22F72C19B4C60021835F /* SwitchboardConfig.swift in Sources */,
+				6DF3812A2C18CBCF004C1DF9 /* PlayerWithVoicemodViewController.swift in Sources */,
+				6D97EFFB2C19D84F0041ADA0 /* VoicemodAfterRecordingAudioEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DF3810B2C18B82B004C1DF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF3810C2C18B82B004C1DF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DF381102C18B82B004C1DF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF381112C18B82B004C1DF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DF381142C18B82B004C1DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DF381152C18B82B004C1DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DF381172C18B82B004C1DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2VLM7NM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoicemodLocalPlayback/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record audio.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "audio.switchboard.Voicemod-Local-Playback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DF381182C18B82B004C1DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2VLM7NM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoicemodLocalPlayback/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record audio.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "audio.switchboard.Voicemod-Local-Playback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "Voicemod Local Playback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF381142C18B82B004C1DF9 /* Debug */,
+				6DF381152C18B82B004C1DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodLocalPlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF381172C18B82B004C1DF9 /* Debug */,
+				6DF381182C18B82B004C1DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DF3811A2C18C492004C1DF9 /* SwitchboardSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSDK;
+		};
+		6DF3811C2C18C492004C1DF9 /* SwitchboardUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardUI;
+		};
+		6DF3811E2C18C492004C1DF9 /* SwitchboardVoicemod */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardVoicemod;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6DF380FA2C18B82B004C1DF9 /* Project object */;
+}
