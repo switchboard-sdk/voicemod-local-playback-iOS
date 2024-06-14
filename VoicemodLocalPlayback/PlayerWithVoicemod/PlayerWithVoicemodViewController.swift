@@ -59,9 +59,9 @@ class PlayerWithVoicemodViewController: VStackViewController {
             SwitchView(title: "Mute", initialValue: example.voicemodNode.muteEnabled) { [weak self] value in
                 self?.example.voicemodNode.muteEnabled = value
             },
-//            SwitchView(title: "Background sound", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
-//                self?.example.voicemodNode.backgroundSoundsEnabled = value
-//            },
+            SwitchView(title: "Background sound", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
+                self?.example.voicemodNode.backgroundSoundsEnabled = value
+            },
             ButtonView(title: "Start") { [weak self] buttonView in
                 if (self!.example.isPlaying) {
                     self?.example.stopPlayer()
