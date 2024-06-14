@@ -465,7 +465,7 @@
 			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.9.1;
+				version = 1.10.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
