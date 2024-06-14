@@ -39,17 +39,17 @@ class VoicemodAfterRecordingViewController : VStackViewController {
 //            SwitchView(title: "Background sound", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
 //                self?.example.voicemodNode.backgroundSoundsEnabled = value
 //            },
-            ButtonView(title: "Start Recording") {_ in 
-                    self.example.record()
+            ButtonView(title: "Start Recording") {[weak self] buttonView in
+                    self!.example.record()
             },
-            ButtonView(title: "Stop Recording") { _ in
-                    self.example.stopRecord()
+            ButtonView(title: "Stop Recording") { [weak self] buttonView in
+                    self!.example.stopRecord()
             },
-            ButtonView(title: "Start Playback") { _ in
-                self.example.play()
+            ButtonView(title: "Start Playback") { [weak self] buttonView in
+                self!.example.play()
             },
-            ButtonView(title: "Stop Playback") { _ in
-                self.example.stopPlayer()
+            ButtonView(title: "Stop Playback") { [weak self] buttonView in
+                self!.example.stopPlayer()
             },
             exportButton,
         ]

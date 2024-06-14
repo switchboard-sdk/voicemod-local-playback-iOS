@@ -44,7 +44,9 @@ class VoicemodAfterRecordingAudioEngine {
         audioGraph.connect(audioGraph.inputNode, to: recorderNode)
         audioGraph.connect(audioPlayerNode, to: voicemodNode)
         audioGraph.connect(voicemodNode, to: audioGraph.outputNode)
+        
         audioEngine.microphoneEnabled = true
+
     }
     
     func record() {
@@ -61,6 +63,7 @@ class VoicemodAfterRecordingAudioEngine {
         if isRecording {
             stopRecord()
         }
+        audioPlayerNode.stop()
         audioPlayerNode.play()
     }
     
