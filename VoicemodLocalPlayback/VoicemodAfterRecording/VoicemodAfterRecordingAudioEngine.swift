@@ -53,8 +53,8 @@ class VoicemodAfterRecordingAudioEngine {
     }
     
     func stopRecord() {
-        recorderNode.stop(rawRecordingFilePath, withFormat: .wav)
-        audioPlayerNode.load(rawRecordingFilePath)
+        recorderNode.stop(rawRecordingFilePath, withFormat: audioFileFormat)
+        audioPlayerNode.load(rawRecordingFilePath, withFormat: audioFileFormat)
     }
     
     func play() {
@@ -101,7 +101,7 @@ class VoicemodAfterRecordingAudioEngine {
         // The duration of additional silence (in seconds) added to the end of the audio playback.
         // This padding ensures that the tail of any applied audio effects has sufficient time to decay naturally,
         // preventing abrupt cutoffs and ensuring a smooth and natural fade-out of the effects.
-        let effectTailPaddingSeconds = 0.1
+        let effectTailPaddingSeconds = 1.0
         offlineGraphRenderer.maxNumberOfSecondsToRender = audioPlayerNode.duration() + effectTailPaddingSeconds
         offlineGraphRenderer.processGraph(audioGraphToRender, withOutputFile: mixedFilePath, withOutputFileCodec: audioFileFormat)
         audioPlayerNode.stop()
