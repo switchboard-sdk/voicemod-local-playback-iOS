@@ -15,8 +15,6 @@ class VoicemodAfterRecordingAudioEngine {
     let recorderNode = SBRecorderNode()
     let voicemodNode = SBVoicemodNode()
     let audioEngine = SBAudioEngine()
-    let offlineGraphRenderer = SBOfflineGraphRenderer()
-
     
     var audioFileFormat: SBCodec = .mp3
     var rawRecordingFilePath: String {
@@ -98,8 +96,13 @@ class VoicemodAfterRecordingAudioEngine {
         let sampleRate = audioPlayerNode.sourceSampleRate
         audioPlayerNode.position = 0
         audioPlayerNode.play()
+        let offlineGraphRenderer = SBOfflineGraphRenderer()
         offlineGraphRenderer.sampleRate =  sampleRate
-        offlineGraphRenderer.maxNumberOfSecondsToRender = audioPlayerNode.duration()
+        // The duration of additional silence (in seconds) added to the end of the audio playback.
+        // This padding ensures that the tail of any applied audio effects has sufficient time to decay naturally,
+        // preventing abrupt cutoffs and ensuring a smooth and natural fade-out of the effects.
+        let effectTailPaddingSeconds = 0.1
+        offlineGraphRenderer.maxNumberOfSecondsToRender = audioPlayerNode.duration() + effectTailPaddingSeconds
         offlineGraphRenderer.processGraph(audioGraphToRender, withOutputFile: mixedFilePath, withOutputFileCodec: audioFileFormat)
         audioPlayerNode.stop()
         
