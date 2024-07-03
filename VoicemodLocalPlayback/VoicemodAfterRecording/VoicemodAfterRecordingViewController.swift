@@ -12,16 +12,24 @@ class VoicemodAfterRecordingViewController : VStackViewController {
         let exportButton = ButtonView(title: "Export Processed File") { [weak self] _ in
             guard let self = self else { return }
             self.example.stopAudioEngine()
-            guard let fileURL = URL(string: self.example.renderMix()) else {
-                return
+
+            DispatchQueue.global(qos: .background).async {
+                let renderedMix = self.example.renderMix()
+                guard let fileURL = URL(string: renderedMix) else {
+                    DispatchQueue.main.async {
+                        self.example.startAudioEngine()
+                    }
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    let activityItems: [URL] = [fileURL]
+                    let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+                    activityViewController.popoverPresentationController?.sourceView = self.view
+                    self.present(activityViewController, animated: true, completion: nil)
+                    self.example.startAudioEngine()
+                }
             }
-            let activityItems: [URL] = [fileURL]
-            let activityViewController = UIActivityViewController(activityItems: activityItems,
-                                                                  applicationActivities: nil)
-            activityViewController.popoverPresentationController?.sourceView = self.view
-            self.present(activityViewController, animated: true, completion: nil)
-            
-            self.example.startAudioEngine()
         }
                 
         self.example.voicemodNode.loadVoice("baby")

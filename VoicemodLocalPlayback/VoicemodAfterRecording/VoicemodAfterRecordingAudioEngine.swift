@@ -42,12 +42,12 @@ class VoicemodAfterRecordingAudioEngine {
         audioGraph.connect(audioGraph.inputNode, to: recorderNode)
         audioGraph.connect(audioPlayerNode, to: voicemodNode)
         audioGraph.connect(voicemodNode, to: audioGraph.outputNode)
-        
-        audioEngine.microphoneEnabled = true
-
     }
     
     func record() {
+        audioEngine.stop()
+        audioEngine.microphoneEnabled = true
+        audioEngine.start(audioGraph)
         stopPlayer()
         recorderNode.start()
     }
@@ -55,6 +55,9 @@ class VoicemodAfterRecordingAudioEngine {
     func stopRecord() {
         recorderNode.stop(rawRecordingFilePath, withFormat: audioFileFormat)
         audioPlayerNode.load(rawRecordingFilePath, withFormat: audioFileFormat)
+        audioEngine.stop()
+        audioEngine.microphoneEnabled = false
+        audioEngine.start(audioGraph)
     }
     
     func play() {
