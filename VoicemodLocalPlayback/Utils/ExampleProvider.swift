@@ -12,7 +12,7 @@ import UIKit
 
 enum ExampleProvider {
     static func initialize() {
-        SBSwitchboardSDK.initialize(withClientID: switchboardClientID, clientSecret: switchboardClientSecret)
+        SBSwitchboardSDK.initialize(withAppID: switchboardClientID, appSecret: switchboardClientSecret)
         SBVoicemodExtension.initialize(withClientKey: voicemodClientKey)
     }
 
