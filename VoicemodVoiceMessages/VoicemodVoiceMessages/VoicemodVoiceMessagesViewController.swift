@@ -22,7 +22,6 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
             
             self.example.startAudioEngine()
 
-
             // NOTE: use this code to run the render on a background thread. Running it on the background thread will be slower by a
             // a factor of ~3
 //            DispatchQueue.global(qos: .background).async {
@@ -72,6 +71,8 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
                 self!.example.stopPlayer()
             },
             exportButton,
+            TextLabelView(text: "Exporting may take a few seconds...")
+            
         ]
     }
 
