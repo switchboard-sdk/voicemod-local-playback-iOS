@@ -1,10 +1,3 @@
-//
-//  VoicemodAfterRecordingAudioEngine.swift
-//  VoicemodLocalPlayback
-//
-//  Created by Banto Balazs on 12/06/2024.
-//
-
 import Foundation
 import SwitchboardSDK
 import SwitchboardVoicemod
