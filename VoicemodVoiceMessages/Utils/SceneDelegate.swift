@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  VoicemodLocalPlayback
+//  VoicemodVoiceMessages
 //
 //  Created by Banto Balazs on 11/06/2024.
 //

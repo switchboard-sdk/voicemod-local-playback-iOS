@@ -27,8 +27,8 @@
 		6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceChangersList.swift; sourceTree = "<group>"; };
 		6DA9842B2C4EA1C800E12B65 /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = "../../../../switchboard-sdk/build/SwitchboardSDK/iOS/SwitchboardSDK.xcframework"; sourceTree = "<group>"; };
 		6DAF7C0F2C35746700D7EC9B /* SwitchboardVoicemod.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardVoicemod.xcframework; path = "../../../../htk-new-app/htk-new-app/ios/SwitchboardVoicemod.xcframework"; sourceTree = "<group>"; };
-		6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchboardConfig.swift; path = VoicemodLocalPlayback/Utils/SwitchboardConfig.swift; sourceTree = SOURCE_ROOT; };
-		6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoicemodLocalPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchboardConfig.swift; path = VoicemodVoiceMessages/Utils/SwitchboardConfig.swift; sourceTree = SOURCE_ROOT; };
+		6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoicemodVoiceMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF381052C18B82B004C1DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6DF3810C2C18B82B004C1DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		6DF380F92C18B82B004C1DF9 = {
 			isa = PBXGroup;
 			children = (
-				6DF381042C18B82B004C1DF9 /* VoicemodLocalPlayback */,
+				6DF381042C18B82B004C1DF9 /* VoicemodVoiceMessages */,
 				6DF381032C18B82B004C1DF9 /* Products */,
 				6DFA6E942C2ADBAC007F4F5C /* Frameworks */,
 			);
@@ -83,12 +83,12 @@
 		6DF381032C18B82B004C1DF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */,
+				6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DF381042C18B82B004C1DF9 /* VoicemodLocalPlayback */ = {
+		6DF381042C18B82B004C1DF9 /* VoicemodVoiceMessages */ = {
 			isa = PBXGroup;
 			children = (
 				6D97F0002C1B02120041ADA0 /* Utils */,
@@ -99,7 +99,7 @@
 				6DF381132C18B82B004C1DF9 /* Info.plist */,
 				6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */,
 			);
-			path = VoicemodLocalPlayback;
+			path = VoicemodVoiceMessages;
 			sourceTree = "<group>";
 		};
 		6DFA6E942C2ADBAC007F4F5C /* Frameworks */ = {
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DF381012C18B82B004C1DF9 /* VoicemodLocalPlayback */ = {
+		6DF381012C18B82B004C1DF9 /* VoicemodVoiceMessages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodLocalPlayback" */;
+			buildConfigurationList = 6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodVoiceMessages" */;
 			buildPhases = (
 				6DF380FE2C18B82B004C1DF9 /* Sources */,
 				6DF380FF2C18B82B004C1DF9 /* Frameworks */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = VoicemodLocalPlayback;
+			name = VoicemodVoiceMessages;
 			packageProductDependencies = (
 				6DF3811C2C18C492004C1DF9 /* SwitchboardUI */,
 				6D74C35F2C525FA3008EF174 /* SwitchboardSDK */,
 				6D74C3612C525FAA008EF174 /* SwitchboardVoicemod */,
 			);
-			productName = VoicemodLocalPlayback;
-			productReference = 6DF381022C18B82B004C1DF9 /* VoicemodLocalPlayback.app */;
+			productName = VoicemodVoiceMessages;
+			productReference = 6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "Voicemod Local Playback" */;
+			buildConfigurationList = 6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "VoicemodVoiceMessages" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DF381012C18B82B004C1DF9 /* VoicemodLocalPlayback */,
+				6DF381012C18B82B004C1DF9 /* VoicemodVoiceMessages */,
 			);
 		};
 /* End PBXProject section */
@@ -350,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VoicemodLocalPlayback/Info.plist;
+				INFOPLIST_FILE = VoicemodVoiceMessages/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -380,7 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VoicemodLocalPlayback/Info.plist;
+				INFOPLIST_FILE = VoicemodVoiceMessages/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -404,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "Voicemod Local Playback" */ = {
+		6DF380FD2C18B82B004C1DF9 /* Build configuration list for PBXProject "VoicemodVoiceMessages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DF381142C18B82B004C1DF9 /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodLocalPlayback" */ = {
+		6DF381162C18B82B004C1DF9 /* Build configuration list for PBXNativeTarget "VoicemodVoiceMessages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DF381172C18B82B004C1DF9 /* Debug */,
