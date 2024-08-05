@@ -49,13 +49,13 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
             PickerView(viewController: self, title: "Voice", initialValue: "baby", items: voices, valueChangedHandler: { [weak self] newValue in
                 self?.example.voicemodNode.loadVoice(newValue)
             }),
-            SwitchView(title: "Bypass", initialValue: example.voicemodNode.bypassEnabled) { [weak self] value in
+            SwitchView(title: "Bypass effect", initialValue: example.voicemodNode.bypassEnabled) { [weak self] value in
                 self?.example.voicemodNode.bypassEnabled = value
             },
             SwitchView(title: "Mute", initialValue: example.voicemodNode.muteEnabled) { [weak self] value in
                 self?.example.voicemodNode.muteEnabled = value
             },
-            SwitchView(title: "Background sound", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
+            SwitchView(title: "Background sound (if available)", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
                 self?.example.voicemodNode.backgroundSoundsEnabled = value
             },
             ButtonView(title: "Start Recording") {[weak self] buttonView in
