@@ -2,7 +2,7 @@ import Foundation
 import SwitchboardSDK
 import SwitchboardVoicemod
 
-class VoicemodAfterRecordingAudioEngine {
+class VoicemodVoiceMessagesAudioEngine {
     let audioGraph = SBAudioGraph()
     let audioPlayerNode = SBAudioPlayerNode()
     let recorderNode = SBRecorderNode()

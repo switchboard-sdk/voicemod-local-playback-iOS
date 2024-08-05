@@ -2,8 +2,8 @@ import SwitchboardUI
 import UIKit
 import AVFoundation
 
-class VoicemodAfterRecordingViewController : VStackViewController {
-    let example = VoicemodAfterRecordingAudioEngine()
+class VoicemodVoiceMessagesViewController : VStackViewController {
+    let example = VoicemodVoiceMessagesAudioEngine()
 
     override var views: [UIView] {
         

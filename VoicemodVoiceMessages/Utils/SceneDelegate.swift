@@ -15,8 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        // Initialize VoicemodAfterRecordingViewController
-        let voicemodViewController = VoicemodAfterRecordingViewController()
+        // Initialize VoicemodVoiceMessagesViewController
+        let voicemodViewController = VoicemodVoiceMessagesViewController()
         // Embed it in a UINavigationController
         let navigationController = UINavigationController(rootViewController: voicemodViewController)
         
