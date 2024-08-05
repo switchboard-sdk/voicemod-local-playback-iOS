@@ -12,24 +12,38 @@ class VoicemodAfterRecordingViewController : VStackViewController {
         let exportButton = ButtonView(title: "Export Processed File") { [weak self] _ in
             guard let self = self else { return }
             self.example.stopAudioEngine()
-
-            DispatchQueue.global(qos: .background).async {
-                let renderedMix = self.example.renderMix()
-                guard let fileURL = URL(string: renderedMix) else {
-                    DispatchQueue.main.async {
-                        self.example.startAudioEngine()
-                    }
-                    return
-                }
-
-                DispatchQueue.main.async {
-                    let activityItems: [URL] = [fileURL]
-                    let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-                    activityViewController.popoverPresentationController?.sourceView = self.view
-                    self.present(activityViewController, animated: true, completion: nil)
-                    self.example.startAudioEngine()
-                }
+            
+            guard let fileURL = URL(string: self.example.renderMix()) else {
+                return
             }
+            let activityItems: [URL] = [fileURL]
+            let activityViewController = UIActivityViewController(activityItems: activityItems,
+                                                                    applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
+            
+            self.example.startAudioEngine()
+
+
+            // NOTE: use this code to run the render on a background thread. Running it on the background thread will be slower by a
+            // a factor of ~3
+//            DispatchQueue.global(qos: .background).async {
+//                let renderedMix = self.example.renderMix()
+//                guard let fileURL = URL(string: renderedMix) else {
+//                    DispatchQueue.main.async {
+//                        self.example.startAudioEngine()
+//                    }
+//                    return
+//                }
+//
+//                DispatchQueue.main.async {
+//                    let activityItems: [URL] = [fileURL]
+//                    let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+//                    activityViewController.popoverPresentationController?.sourceView = self.view
+//                    self.present(activityViewController, animated: true, completion: nil)
+//                    self.example.startAudioEngine()
+//                }
+//            }
         }
                 
         self.example.voicemodNode.loadVoice("baby")

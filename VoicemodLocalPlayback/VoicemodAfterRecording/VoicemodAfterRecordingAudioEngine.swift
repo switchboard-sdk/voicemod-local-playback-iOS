@@ -24,7 +24,7 @@ class VoicemodAfterRecordingAudioEngine {
     
     private var mixedFilePath: String {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0].absoluteString + "mix.mp3"  }
+        return paths[0].absoluteString + "message_with_voicemod.mp3"  }
     
     var isRecording: Bool {
         return recorderNode.isRecording
@@ -97,7 +97,7 @@ class VoicemodAfterRecordingAudioEngine {
         audioGraphToRender.connect(voicemodNode, to: audioGraphToRender.outputNode)
         
         let sampleRate = audioPlayerNode.sourceSampleRate
-        audioPlayerNode.position = 0
+        audioPlayerNode.stop()
         audioPlayerNode.play()
         let offlineGraphRenderer = SBOfflineGraphRenderer()
         offlineGraphRenderer.sampleRate =  sampleRate
@@ -106,7 +106,10 @@ class VoicemodAfterRecordingAudioEngine {
         // preventing abrupt cutoffs and ensuring a smooth and natural fade-out of the effects.
         let effectTailPaddingSeconds = 1.0
         offlineGraphRenderer.maxNumberOfSecondsToRender = audioPlayerNode.duration() + effectTailPaddingSeconds
+        voicemodNode.offlineModeEnabled = true
+        voicemodNode.loadVoice(voicemodNode.getCurrentVoice())
         offlineGraphRenderer.processGraph(audioGraphToRender, withOutputFile: mixedFilePath, withOutputFileCodec: audioFileFormat)
+        voicemodNode.offlineModeEnabled = false
         audioPlayerNode.stop()
         
         return mixedFilePath
