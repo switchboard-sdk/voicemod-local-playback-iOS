@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import SwitchboardSDK
+import SwitchboardVoicemod
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        SBSwitchboardSDK.initialize(withAppID: switchboardClientID, appSecret: switchboardClientSecret)
+        SBVoicemodExtension.initialize(withClientKey: voicemodClientKey)
         return true
     }
 
