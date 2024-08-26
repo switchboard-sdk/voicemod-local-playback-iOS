@@ -35,6 +35,11 @@ class VoicemodVoiceMessagesAudioEngine {
         audioGraph.connect(audioGraph.inputNode, to: recorderNode)
         audioGraph.connect(audioPlayerNode, to: voicemodNode)
         audioGraph.connect(voicemodNode, to: audioGraph.outputNode)
+        
+        // Even when the audioPlayerNode is not started or has been stopped, silent audio frames are still flowing through the system. The voicemodNode continues to output
+        // background sounds for voice changers that have such effects, which is undesirable when the audioPlayerNode is not actively playing. Therefore, we only unmute
+        // the voicemodNode when the audioPlayerNode is started or when we are exporting the final file.
+        voicemodNode.muteEnabled = true
     }
     
     func record() {
@@ -54,6 +59,7 @@ class VoicemodVoiceMessagesAudioEngine {
     }
     
     func play() {
+        voicemodNode.muteEnabled = false
         if isRecording {
             stopRecord()
         }
@@ -61,12 +67,10 @@ class VoicemodVoiceMessagesAudioEngine {
         audioPlayerNode.play()
     }
     
-    func pause() {
-        audioPlayerNode.pause()
-    }
     
     func stopPlayer() {
         audioPlayerNode.stop()
+        voicemodNode.muteEnabled = true
     }
     
     func stopAudioEngine() {
@@ -99,10 +103,12 @@ class VoicemodVoiceMessagesAudioEngine {
         // preventing abrupt cutoffs and ensuring a smooth and natural fade-out of the effects.
         let effectTailPaddingSeconds = 1.0
         offlineGraphRenderer.maxNumberOfSecondsToRender = audioPlayerNode.duration() + effectTailPaddingSeconds
+        voicemodNode.muteEnabled = false
         voicemodNode.offlineModeEnabled = true
         voicemodNode.loadVoice(voicemodNode.getCurrentVoice())
         offlineGraphRenderer.processGraph(audioGraphToRender, withOutputFile: mixedFilePath, withOutputFileCodec: audioFileFormat)
         voicemodNode.offlineModeEnabled = false
+        voicemodNode.muteEnabled = true
         audioPlayerNode.stop()
         
         return mixedFilePath
