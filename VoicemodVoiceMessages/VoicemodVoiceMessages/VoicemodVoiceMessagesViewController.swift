@@ -4,6 +4,10 @@ import AVFoundation
 
 class VoicemodVoiceMessagesViewController : VStackViewController {
     let example = VoicemodVoiceMessagesAudioEngine()
+    var toggleRecordingButton: ButtonView!
+    var togglePlaybackButton: ButtonView!
+    var timer: Timer?
+
 
     override var views: [UIView] {
         
@@ -44,6 +48,36 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
         }
                 
         self.example.voicemodNode.loadVoice("baby")
+        
+        toggleRecordingButton = ButtonView(title: "Start Recording") {[weak self] buttonView in
+            if (!self!.example.isRecording) {
+                self!.example.record()
+                buttonView.button.setTitle("Stop Recording", for: .normal)
+                self!.togglePlaybackButton.button.isEnabled = false
+            } else {
+                self!.example.stopRecord()
+                buttonView.button.setTitle("Start Recording", for: .normal)
+                self!.togglePlaybackButton.button.isEnabled = true
+            }
+        }
+        
+        toggleRecordingButton.button.setButtonStyle(.active)
+        
+        togglePlaybackButton = ButtonView(title: "Start Playback") { [weak self] buttonView in
+            if (!self!.example.isPlaying) {
+                self!.example.play()
+                self!.startTimer()
+                buttonView.button.setTitle("Stop Playback", for: .normal)
+                self!.toggleRecordingButton.button.isEnabled = false
+            } else {
+                self!.example.stopPlayer()
+                self!.stopTimer()
+                buttonView.button.setTitle("Start Playback", for: .normal)
+                self!.toggleRecordingButton.button.isEnabled = true
+            }
+        }
+        
+        togglePlaybackButton.button.setButtonStyle(.active)
 
         return [
             PickerView(viewController: self, title: "Voice", initialValue: "baby", items: voices, valueChangedHandler: { [weak self] newValue in
@@ -52,24 +86,11 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
             SwitchView(title: "Bypass effect", initialValue: example.voicemodNode.bypassEnabled) { [weak self] value in
                 self?.example.voicemodNode.bypassEnabled = value
             },
-            SwitchView(title: "Mute", initialValue: example.voicemodNode.muteEnabled) { [weak self] value in
-                self?.example.voicemodNode.muteEnabled = value
-            },
             SwitchView(title: "Background sound (if available)", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in
                 self?.example.voicemodNode.backgroundSoundsEnabled = value
             },
-            ButtonView(title: "Start Recording") {[weak self] buttonView in
-                    self!.example.record()
-            },
-            ButtonView(title: "Stop Recording") { [weak self] buttonView in
-                    self!.example.stopRecord()
-            },
-            ButtonView(title: "Start Playback") { [weak self] buttonView in
-                self!.example.play()
-            },
-            ButtonView(title: "Stop Playback") { [weak self] buttonView in
-                self!.example.stopPlayer()
-            },
+            toggleRecordingButton,
+            togglePlaybackButton,
             exportButton,
             TextLabelView(text: "Exporting may take a few seconds...")
             
@@ -84,5 +105,23 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
         super.viewDidLoad()
 
         example.startAudioEngine()
+    }
+    
+    func startTimer() {
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateIsPlayingUI), userInfo: nil, repeats: true)
+        }
+    }
+
+    func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    @objc func updateIsPlayingUI() {
+        if (!example.isPlaying) {
+            togglePlaybackButton.button.setTitle("Start Playback", for: .normal)
+            toggleRecordingButton.button.isEnabled = true
+        }
     }
 }
