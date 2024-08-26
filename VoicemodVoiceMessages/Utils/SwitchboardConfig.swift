@@ -11,4 +11,4 @@ import Foundation
 // https://docs.switchboard.audio/downloads/
 let switchboardClientID = ""
 let switchboardClientSecret = ""
-let voicemodClientKey = "QrTb5i2pCF"
+let voicemodClientKey = ""
