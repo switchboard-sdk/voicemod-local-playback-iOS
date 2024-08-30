@@ -5,12 +5,11 @@
 <a href="https://youtube.com/shorts/N172WS-7_1o" target="_blank">YouTube Demo Video</a> 
 
 
-This example application showcases the process of applying Voicemod effects to a local audio files and recordings through the integration of SwitchboardSDK and VoicemodExtension, illustrating how to enhance audio with various effects.
+This example application demonstrates how to record a voice message, apply Voicemod effects, and export the modified message using the integration of SwitchboardSDK and VoicemodExtension.
 
 ## Adding Your License Key
 
 Please insert your license keys into the `SwitchboardConfig.swift` file.
 
-## Examples
- - Local Audio File with Voicemod: Applies Voicemod effects to a local audio file.
- - Record, Voicemod, Playback, Export: Records audio, applies a voice changer through Voicemod, and exports the recording with the effect applied.
+## TestFlight
+To test the app, download it via the public TestFlight link: https://testflight.apple.com/join/TP8ZZQe2 .

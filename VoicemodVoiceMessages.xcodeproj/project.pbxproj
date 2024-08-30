@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D74C3602C525FA3008EF174 /* SwitchboardSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D74C35F2C525FA3008EF174 /* SwitchboardSDK */; };
-		6D74C3622C525FAA008EF174 /* SwitchboardVoicemod in Frameworks */ = {isa = PBXBuildFile; productRef = 6D74C3612C525FAA008EF174 /* SwitchboardVoicemod */; };
+		6D3DF28E2C8220ED00B1661A /* SwitchboardVoicemod in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */; };
 		6D97EFFB2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFA2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift */; };
 		6D97EFFD2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFC2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift */; };
 		6D97EFFF2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */; };
 		6DBC22F72C19B4C60021835F /* SwitchboardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */; };
+		6DE0B9752C80C878003FE7E1 /* SwitchboardSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE0B9742C80C878003FE7E1 /* SwitchboardSDK */; };
 		6DF381062C18B82B004C1DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381052C18B82B004C1DF9 /* AppDelegate.swift */; };
 		6DF381082C18B82B004C1DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */; };
 		6DF3810D2C18B82B004C1DF9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3810C2C18B82B004C1DF9 /* Base */; };
@@ -28,6 +28,7 @@
 		6DA9842B2C4EA1C800E12B65 /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = "../../../../switchboard-sdk/build/SwitchboardSDK/iOS/SwitchboardSDK.xcframework"; sourceTree = "<group>"; };
 		6DAF7C0F2C35746700D7EC9B /* SwitchboardVoicemod.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardVoicemod.xcframework; path = "../../../../htk-new-app/htk-new-app/ios/SwitchboardVoicemod.xcframework"; sourceTree = "<group>"; };
 		6DBC22F62C19B4C60021835F /* SwitchboardConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchboardConfig.swift; path = VoicemodVoiceMessages/Utils/SwitchboardConfig.swift; sourceTree = SOURCE_ROOT; };
+		6DE0B9702C80C853003FE7E1 /* SwitchboardVoicemod.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardVoicemod.xcframework; path = ../../../../../Downloads/test/SwitchboardVoicemod.xcframework; sourceTree = "<group>"; };
 		6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoicemodVoiceMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF381052C18B82B004C1DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF381072C18B82B004C1DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D74C3602C525FA3008EF174 /* SwitchboardSDK in Frameworks */,
-				6D74C3622C525FAA008EF174 /* SwitchboardVoicemod in Frameworks */,
+				6DE0B9752C80C878003FE7E1 /* SwitchboardSDK in Frameworks */,
+				6D3DF28E2C8220ED00B1661A /* SwitchboardVoicemod in Frameworks */,
 				6DF3811D2C18C492004C1DF9 /* SwitchboardUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +106,7 @@
 		6DFA6E942C2ADBAC007F4F5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DE0B9702C80C853003FE7E1 /* SwitchboardVoicemod.xcframework */,
 				6DA9842B2C4EA1C800E12B65 /* SwitchboardSDK.xcframework */,
 				6DAF7C0F2C35746700D7EC9B /* SwitchboardVoicemod.xcframework */,
 				6DFA6E952C2ADBAD007F4F5C /* SwitchboardVoicemod.xcframework */,
@@ -130,8 +132,8 @@
 			name = VoicemodVoiceMessages;
 			packageProductDependencies = (
 				6DF3811C2C18C492004C1DF9 /* SwitchboardUI */,
-				6D74C35F2C525FA3008EF174 /* SwitchboardSDK */,
-				6D74C3612C525FAA008EF174 /* SwitchboardVoicemod */,
+				6DE0B9742C80C878003FE7E1 /* SwitchboardSDK */,
+				6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */,
 			);
 			productName = VoicemodVoiceMessages;
 			productReference = 6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */;
@@ -430,21 +432,21 @@
 			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 2.0.0;
+				version = 2.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D74C35F2C525FA3008EF174 /* SwitchboardSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
-			productName = SwitchboardSDK;
-		};
-		6D74C3612C525FAA008EF174 /* SwitchboardVoicemod */ = {
+		6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
 			productName = SwitchboardVoicemod;
+		};
+		6DE0B9742C80C878003FE7E1 /* SwitchboardSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSDK;
 		};
 		6DF3811C2C18C492004C1DF9 /* SwitchboardUI */ = {
 			isa = XCSwiftPackageProductDependency;
