@@ -8,6 +8,7 @@
 import UIKit
 import SwitchboardSDK
 import SwitchboardVoicemod
+import SwitchboardRNNoise
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         SBSwitchboardSDK.initialize(withAppID: switchboardClientID, appSecret: switchboardClientSecret)
         SBVoicemodExtension.initialize(withClientKey: voicemodClientKey)
+        SBRNNoiseExtension.initialize()
         return true
     }
 

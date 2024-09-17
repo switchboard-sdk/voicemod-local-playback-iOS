@@ -67,6 +67,9 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
             SwitchView(title: "Bypass effect", initialValue: example.voicemodNode.bypassEnabled) { [weak self] value in
                 self?.example.voicemodNode.bypassEnabled = value
             },
+            SwitchView(title: "Noise filter", initialValue: example.noiseFilterEnabled) { [weak self] value in
+                self?.example.noiseFilterEnabled = value
+            },
             toggleRecordingButton,
             togglePlaybackButton,
             TextLabelView(text: ""), // empty line placeholder

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D3DF28E2C8220ED00B1661A /* SwitchboardVoicemod in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */; };
+		6D7213522C999E470005808D /* SwitchboardRNNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 6D7213512C999E470005808D /* SwitchboardRNNoise */; };
 		6D97EFFB2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFA2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift */; };
 		6D97EFFD2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFC2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift */; };
 		6D97EFFF2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */; };
@@ -46,6 +47,7 @@
 			files = (
 				6DE0B9752C80C878003FE7E1 /* SwitchboardSDK in Frameworks */,
 				6D3DF28E2C8220ED00B1661A /* SwitchboardVoicemod in Frameworks */,
+				6D7213522C999E470005808D /* SwitchboardRNNoise in Frameworks */,
 				6DF3811D2C18C492004C1DF9 /* SwitchboardUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +136,7 @@
 				6DF3811C2C18C492004C1DF9 /* SwitchboardUI */,
 				6DE0B9742C80C878003FE7E1 /* SwitchboardSDK */,
 				6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */,
+				6D7213512C999E470005808D /* SwitchboardRNNoise */,
 			);
 			productName = VoicemodVoiceMessages;
 			productReference = 6DF381022C18B82B004C1DF9 /* VoicemodVoiceMessages.app */;
@@ -442,6 +445,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
 			productName = SwitchboardVoicemod;
+		};
+		6D7213512C999E470005808D /* SwitchboardRNNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DF381192C18C492004C1DF9 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardRNNoise;
 		};
 		6DE0B9742C80C878003FE7E1 /* SwitchboardSDK */ = {
 			isa = XCSwiftPackageProductDependency;
