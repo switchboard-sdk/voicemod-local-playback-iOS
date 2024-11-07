@@ -11,5 +11,15 @@ This example application demonstrates how to record a voice message, apply Voice
 
 Please insert your license keys into the `SwitchboardConfig.swift` file.
 
+## Setup
+
+Before opening the project please run:
+
+```
+sh setup.sh
+```
+
+This will download the necessary Voicemod assets.
+
 ## TestFlight
 To test the app, download it via the public TestFlight link: https://testflight.apple.com/join/TP8ZZQe2 .
