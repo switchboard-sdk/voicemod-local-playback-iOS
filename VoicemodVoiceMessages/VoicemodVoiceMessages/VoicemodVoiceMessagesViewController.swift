@@ -1,6 +1,8 @@
 import SwitchboardUI
 import UIKit
 import AVFoundation
+import SwitchboardVoicemod
+
 
 class VoicemodVoiceMessagesViewController : VStackViewController {
     let example = VoicemodVoiceMessagesAudioEngine()
@@ -58,7 +60,7 @@ class VoicemodVoiceMessagesViewController : VStackViewController {
 
 
         return [
-            PickerView(viewController: self, title: "Voice", initialValue: "baby", items: voices, valueChangedHandler: { [weak self] newValue in
+            PickerView(viewController: self, title: "Voice", initialValue: "baby", items: SBVoicemodExtension.listVoices(), valueChangedHandler: { [weak self] newValue in
                 self?.example.voicemodNode.loadVoice(newValue)
             }),
             SwitchView(title: "Background sound (if available)", initialValue: example.voicemodNode.backgroundSoundsEnabled) { [weak self] value in

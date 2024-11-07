@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         SBSwitchboardSDK.initialize(withAppID: switchboardClientID, appSecret: switchboardClientSecret)
-        SBVoicemodExtension.initialize(withClientKey: voicemodClientKey)
+        SBVoicemodExtension.initialize(withClientKey: voicemodClientKey, pathToVoiceData: Bundle.main.bundlePath.appending("/VoiceData"))
         SBRNNoiseExtension.initialize()
         return true
     }

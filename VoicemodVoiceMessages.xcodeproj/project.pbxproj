@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D3DF28E2C8220ED00B1661A /* SwitchboardVoicemod in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3DF28D2C8220ED00B1661A /* SwitchboardVoicemod */; };
 		6D7213522C999E470005808D /* SwitchboardRNNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 6D7213512C999E470005808D /* SwitchboardRNNoise */; };
+		6D7F8FE82CDD3A8E001089EA /* VoiceData in Resources */ = {isa = PBXBuildFile; fileRef = 6D7F8FE72CDD3A8E001089EA /* VoiceData */; };
 		6D97EFFB2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFA2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift */; };
 		6D97EFFD2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFC2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift */; };
 		6D97EFFF2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D7F8FE72CDD3A8E001089EA /* VoiceData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoiceData; path = VoicemodVoiceMessages/VoiceData; sourceTree = "<group>"; };
 		6D97EFFA2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceMessagesAudioEngine.swift; sourceTree = "<group>"; };
 		6D97EFFC2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceMessagesViewController.swift; sourceTree = "<group>"; };
 		6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceChangersList.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		6DF380F92C18B82B004C1DF9 = {
 			isa = PBXGroup;
 			children = (
+				6D7F8FE72CDD3A8E001089EA /* VoiceData */,
 				6DF381042C18B82B004C1DF9 /* VoicemodVoiceMessages */,
 				6DF381032C18B82B004C1DF9 /* Products */,
 				6DFA6E942C2ADBAC007F4F5C /* Frameworks */,
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7F8FE82CDD3A8E001089EA /* VoiceData in Resources */,
 				6DF3810F2C18B82B004C1DF9 /* Assets.xcassets in Resources */,
 				6DF381122C18B82B004C1DF9 /* Base in Resources */,
 				6DF3810D2C18B82B004C1DF9 /* Base in Resources */,
@@ -435,7 +439,7 @@
 			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 2.1.1;
+				version = 2.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
