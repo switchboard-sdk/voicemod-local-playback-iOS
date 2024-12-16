@@ -16,7 +16,7 @@ Please insert your license keys into the `SwitchboardConfig.swift` file.
 Before opening the project please run:
 
 ```
-sh setup.sh
+sh scripts/setup.sh
 ```
 
 This will download the necessary Voicemod assets.

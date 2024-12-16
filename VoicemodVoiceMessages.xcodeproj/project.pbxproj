@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D7F8FE72CDD3A8E001089EA /* VoiceData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoiceData; path = VoicemodVoiceMessages/VoiceData; sourceTree = "<group>"; };
+		6D7F8FE72CDD3A8E001089EA /* VoiceData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoiceData; path = assets/VoiceData; sourceTree = "<group>"; };
 		6D97EFFA2C19D84F0041ADA0 /* VoicemodVoiceMessagesAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceMessagesAudioEngine.swift; sourceTree = "<group>"; };
 		6D97EFFC2C19DF850041ADA0 /* VoicemodVoiceMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceMessagesViewController.swift; sourceTree = "<group>"; };
 		6D97EFFE2C19E6020041ADA0 /* VoicemodVoiceChangersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemodVoiceChangersList.swift; sourceTree = "<group>"; };

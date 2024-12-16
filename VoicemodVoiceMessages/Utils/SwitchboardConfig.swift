@@ -9,6 +9,6 @@ import Foundation
 
 // To initialize our SDK in your project, please get in touch to get your clientID and clientSecret values.
 // https://docs.switchboard.audio/downloads/
-let switchboardClientID = ""
-let switchboardClientSecret = ""
-let voicemodClientKey = ""
+let switchboardClientID = YOUR_SWITCHBOARD_CLIENT_ID
+let switchboardClientSecret = YOUR_SWITCHBOARD_CLIENT_SECRET
+let voicemodClientKey = YOUR_VOICEMOD_CLIENT_KEY
